@@ -1,8 +1,8 @@
 # FINWitter
 
-Twitter financial sentiment analysis with 🤗Transformers, ➡️Apache Arrow, and 🌶️Flask.
+Twitter financial sentiment analysis with 🤗Transformers.
 
-Part of WAI002: [WAI](https://warwick.ai/)x[WFS](https://www.warwickfinancesocieties.org/) Financial sentiment analysis with Twitter.
+Part of [WAI203: An Intermediate guide to NLP for Financial Sentiment Analysis](https://warwick.ai/courses/wai203).
 
 ## Installation
 ...
