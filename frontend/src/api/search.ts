@@ -1,13 +1,25 @@
 export interface SearchResult {
     entity: string;
-    report: EntityReport;
+    range: string[];
+    total: SentimentsCount;
+    history: SentimentsCountHistory;
 }
-  
-export interface EntityReport {
-    outlook: string;
-    positiveCount: number;
-    neutralCount: number;
-    negativeCount: number;
+
+export interface SentimentCountHistory {
+    days: string[];
+    counts: number[];
+}
+
+export interface SentimentsCountHistory {
+    positive: SentimentCountHistory;
+    neutral: SentimentCountHistory;
+    negative: SentimentCountHistory;
+}
+
+export interface SentimentsCount {
+    positive: number;
+    neutral: number;
+    negative: number;
 }
 
 export const searchEntity = async (entity: string) => fetch(`http://localhost:8000/api/search/${entity}`)
